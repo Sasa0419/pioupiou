@@ -1,0 +1,22 @@
+*
+{
+    cursor: none;
+}
+
+
+.fake_cursor{
+    position: absolute;
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 10;
+}
+.fake_cursor img{
+    width : 128px;
+    height: 128px;
+}
+
+.fake_cursor {
+    margin: -10px;
+    padding: 0px;
+    box-sizing: border-box;
+}

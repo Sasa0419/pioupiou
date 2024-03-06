@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+body, html {
+
+    font-family: 'Creepster', cursive;
+}
+
+    /* video background */
+  #background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .play-button {
+    background-color: #fa0101; /* Couleur de fond rouge */
+    color: #fff; /* Couleur du texte en blanc */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Pour positionner les éléments enfants */
+    overflow: hidden; /* Pour cacher le débordement du sang */
+    font-family: 'Creepster', cursive;
+   margin-left: 5rem;
+   margin-right: 5rem;
+ 
+}
+
+.play-button::before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Positionné en bas du bouton */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+  
+
+    opacity: 0; /* Initialement transparent */
+    transition: all 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background-color: #ffec40; /* Couleur jaune canari au survol */
+    /* cursor:pointer; */
+    font-family:'Creepster', cursive;
+    color: #fa0101;
+   
+}
+
+.play-button:hover::before {
+    top: 0; /* Animer le sang vers le haut */
+    
+    opacity: 1; /* Rendre le sang visible */
+}
+
+.play-button:active {
+    transform: scale(0.9);
+}
+
+/* page content */
+h1, h2 {
+  color: white;
+  font-family: 'Creepster', cursive;
+  /* font-weight: bold; */
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+}
+.button-container {
+    text-align: center;
+    
+   
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
+}

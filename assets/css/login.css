@@ -1,0 +1,65 @@
+body {
+    background-color: #3d0000; /* Couleur de fond sombre */
+    color: #ff0000; /* Couleur du texte */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titre {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #870000; /* Couleur de fond rouge foncé */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 35px;
+    max-width: 400px;
+}
+
+.container h2 {
+    margin: 0;
+}
+
+.align {
+    text-align: center;
+}
+
+label {
+    color: #ff0000; /* Couleur du texte des étiquettes */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ff0000; /* Bordure rouge pour les champs de saisie */
+    border-radius: 3px;
+    background: #520000; /* Couleur de fond rouge plus foncée */
+    color: #ff0000; /* Couleur du texte des champs de saisie */
+}
+
+button.connexion {
+    background: #ff0000; /* Bouton rouge */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animation de transition pour la couleur de fond */
+}
+
+button.connexion:hover {
+    background-color: #870000; /* Couleur de fond plus sombre au survol */
+}
+
+#space {
+    margin-top: 10px;
+}
